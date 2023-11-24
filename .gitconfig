@@ -12,12 +12,12 @@
 	autoSetupRemote = true
 [alias]
 	alias = config --get-regexp ^alias.
-  s = status
-  co = checkout
+	s = status
+	co = checkout
 	cob = checkout -b
 	del = branch -D
-  undo = reset HEAD~1 --mixed
-  res = !git reset --hard
+	undo = reset HEAD~1 --mixed
+	res = !git reset --hard
 	dog = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)' --all
 	cb = !git branch | grep -v master | grep -v main | xargs git branch -D
 	refresh = !git pull --prune && git cb
